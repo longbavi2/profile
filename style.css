@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inria+Serif&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap');
+:root {
+    --pink-color: #f2726a;
+    --font: 'Roboto Serif', serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font)
+}
+li{
+    list-style: none;
+}
+.cart{
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 30px;
+    margin-bottom: 20px;
+}
+.cart__img:hover{
+    width: 100%;
+    height: 100%;
+    transform:unset;
+    overflow: unset;
+    transition: 0.4s;
+    border: none;
+}
+.cart__img{
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--pink-color);
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    transform: translateY(20px);
+    margin: 0 auto;
+}
+.cart__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.cart__name{
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.cart__title{
+    color: var(--pink-color);
+    margin-top: 40px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.cart__menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.cart__menu a{
+    color: white;
+}
+.cart__menu a:hover{
+    color: var(--pink-color);
+}
+.cart__button{
+    text-align: center;
+    background-color: black;
+}
+.cart__button button{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 1px solid var(--pink-color);   
+}
+.cart__button button:hover{
+    background-color: var(--pink-color);
+    transition: 0.4s
+}
+.cart__list{
+    height: 100vh;
+    background-color: rgba(28, 189, 157, 0.708);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
